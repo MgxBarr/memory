@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="assets/cs.css"/>
+	<link rel="icon" href="assets/img/icone.png">
+    <title>Le Memory</title>
+</head>
+	<body onload="generation()">
+
+	<div id="tableau">
+      <h1>Le Memory</h1>
+      <div id="menu">
+           <input type="button" id="idbouton" name="nombouton" value="FACILE" onclick="easy()"/>
+           <input type="button" id="idbouton" name="nombouton" value="MOYEN" onclick="medium()"/>
+           <input type="button" id="idbouton" name="nombouton" value="DIFFICILE" onclick="hard()"/>
+      </div>
+			<table id="sous-tableau">
+			  <tr>
+				<td><img alt="1-1" id="tab" src="assets/img/fond-modified.png" onclick="retourner(this)"></td>
+				<td><img alt="1-2" id="tab" src="assets/img/fond-modified.png" onclick="retourner(this)"></td>
+				<td><img alt="1-3" id="tab" src="assets/img/fond-modified.png" onclick="retourner(this)"></td>
+				<td><img alt="1-4" id="tab" src="assets/img/fond-modified.png" onclick="retourner(this)"></td>
+				<td><img alt="1-5" id="tab" src="assets/img/fond-modified.png" onclick="retourner(this)"></td>
+			  </tr>
+			  <tr>
+				<td><img alt="2-1" id="tab" src="assets/img/fond-modified.png" onclick="retourner(this)"></td>
+				<td><img alt="2-2" id="tab" src="assets/img/fond-modified.png" onclick="retourner(this)"></td>
+				<td><img alt="2-3" id="tab" src="assets/img/fond-modified.png" onclick="retourner(this)"></td>
+				<td><img alt="2-4" id="tab" src="assets/img/fond-modified.png" onclick="retourner(this)"></td>
+				<td><img alt="2-5" id="tab" src="assets/img/fond-modified.png" onclick="retourner(this)"></td>
+			  </tr>
+			  <tr>
+				<td><img alt="3-1" id="tab" src="assets/img/fond-modified.png" onclick="retourner(this)"></td>
+				<td><img alt="3-2" id="tab" src="assets/img/fond-modified.png" onclick="retourner(this)"></td>
+				<td><img alt="3-3" id="tab" src="assets/img/fond-modified.png" onclick="retourner(this)"></td>
+				<td><img alt="3-4" id="tab" src="assets/img/fond-modified.png" onclick="retourner(this)"></td>
+				<td><img alt="3-5" id="tab" src="assets/img/fond-modified.png" onclick="retourner(this)"></td>
+			  </tr>
+			  <tr>
+				<td><img alt="4-1" id="tab" src="assets/img/fond-modified.png" onclick="retourner(this)"></td>
+				<td><img alt="4-2" id="tab" src="assets/img/fond-modified.png" onclick="retourner(this)"></td>
+				<td><img alt="4-3" id="tab" src="assets/img/fond-modified.png" onclick="retourner(this)"></td>
+				<td><img alt="4-4" id="tab" src="assets/img/fond-modified.png" onclick="retourner(this)"></td>
+				<td><img alt="4-5" id="tab" src="assets/img/fond-modified.png" onclick="retourner(this)"></td>
+			  </tr>
+			</table>
+			<div id="Statut">
+        Nb de clics : <span id="nbclics">0</span>
+			</div>
+			<input type="button" id="idbouton" name="nombouton" value="REJOUER" onclick="window.location.reload()"/>
+		 </div>
+
+     <div id="cache">
+
+     </div>
+
+		  <script type="text/javascript" src="assets/java.js"></script>
+	</body>
+</html>
